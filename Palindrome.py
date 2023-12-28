@@ -14,8 +14,14 @@ class Palindrome:
         return True
     
     def __str__(self):
-        return f"{self.val} {self.isPal}"        
+        isPalindrome = "est"
+        if not self.isPal :
+            isPalindrome = "n'est pas"
+        return f"La valeur '{self.val}' {isPalindrome} un palindrome"        
 
-p1 = Palindrome("0110")
+p1 = Palindrome("010")
 p1.isPalindrome()
 print(p1)
+p2 = Palindrome("0210")
+p2.isPalindrome()
+print(p2)
